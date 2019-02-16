@@ -17,7 +17,7 @@
 import Message from './components/Message.vue'
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
-import { NOTFOUNF, UNAUTHORIZED, INTERNAL_SERVER_ERROR } from './util'
+import { NOTFOUND, UNAUTHORIZED, INTERNAL_SERVER_ERROR } from './util'
 
 
 export default {
