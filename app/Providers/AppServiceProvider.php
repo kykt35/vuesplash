@@ -13,7 +13,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // 本番環境（heroku)でhttpsを強制
+        if (\App::environment('production')) {
+            \URL::forceScheme('https');
+        }
     }
 
     /**
