@@ -40,7 +40,7 @@ export default {
     methods: {
         async fetchPhotos () {
             console.log(this.page);
-            const response = await axios.get(`/api/photos/?page=${this.page}`)
+            const response = await axios.get(`/api/photos?page=${this.page}`)
             console.log(+ response.status);
             if (response.status !== OK) {
                 this.$store.commit('error/setCode', response.status)
