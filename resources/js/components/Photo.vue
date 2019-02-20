@@ -51,7 +51,7 @@ export default {
     data () {
         return {
             landscape: false,
-            portrait: false
+            portrait: false,
         }
     },
     computed: {

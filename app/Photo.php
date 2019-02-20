@@ -88,7 +88,7 @@ class Photo extends Model
     ];
 
     // pagination 設定
-    protected $perPage = 15;
+    protected $perPage = 3;
 
     /**
      * リレーションシップ　- commentsテーブル

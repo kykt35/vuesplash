@@ -23,6 +23,13 @@ export default {
         Photo,
         Pagination
     },
+    props: {
+        page: {
+            type: Number,
+            require: false,
+            default: 1
+        }
+    },
     data () {
         return {
             photos: [],
@@ -95,7 +102,8 @@ export default {
                 await this.fetchPhotos ()
             },
             immediate: true
-        }
+        },
+       
     }
 }
 </script>
