@@ -85,6 +85,7 @@ class PhotoController extends Controller
             'Content-Type' => 'application/octet-stream',
             'Content-Disposition' => 'attachment; filename="' . $photo->filename . '"',
         ];
+        return response(Storage::cloud()->get($photo->filename), 200, $headers);
     }
     /**
      * 写真詳細

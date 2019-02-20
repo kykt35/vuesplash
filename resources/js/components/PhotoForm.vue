@@ -64,7 +64,6 @@ export default {
 
             // ファイルを読み込み終わったタイミングで実行する処理
             reader.onload = e => {
-                 console.log("File load");
                 // previewに読み込み結果（データURL）を代入する
                 // previewに値が入ると<output>につけたv-ifがtrueと判定される
                 //また<img>のsrc属性はpreviewの値を参照しているので
